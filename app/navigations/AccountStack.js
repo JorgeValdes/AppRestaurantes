@@ -4,6 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import Account from "../Account/Account";
 import Login from "../Account/Login";
+import Register from "../Account/Register";
 
 const Stack = createStackNavigator();
 
@@ -22,6 +23,13 @@ export default function AccountStack() {
         component={Login}
         options={{
           title: "Iniciar sesión",
+        }}
+      ></Stack.Screen>
+      <Stack.Screen
+        name="Register"
+        component={Register}
+        options={{
+          title: "Registrate",
         }}
       ></Stack.Screen>
     </Stack.Navigator>
